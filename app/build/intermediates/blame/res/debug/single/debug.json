@@ -16,8 +16,16 @@
         "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/menu/login.xml"
     },
     {
+        "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/layout_item_tweet.xml.flat",
+        "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/layout/item_tweet.xml"
+    },
+    {
         "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
         "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/layout_activity_timeline.xml.flat",
+        "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/layout/activity_timeline.xml"
     },
     {
         "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
