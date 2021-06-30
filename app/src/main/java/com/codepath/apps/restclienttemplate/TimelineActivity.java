@@ -28,6 +28,7 @@ import okhttp3.Headers;
 public class TimelineActivity extends AppCompatActivity {
     public static final String TAG = "TimelineActivity";
 
+
     TwitterClient client;
     RecyclerView rvTweets;
     List<Tweet> tweets;
@@ -74,8 +75,10 @@ public class TimelineActivity extends AppCompatActivity {
 
         if(item.getItemId()==R.id.compose){
             //compose icon has been selected
-            Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
             //navigate to the compose activity
+            Intent intent = new Intent(this, ComposeActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);

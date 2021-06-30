@@ -1661,6 +1661,7 @@ id blocking
 id bottom
 id bounce
 id btnLogout
+id btnTweet
 id buttonPanel
 id cancel_button
 id center
@@ -1721,6 +1722,7 @@ id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id etCompose
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2008,6 +2010,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_compose
 layout activity_login
 layout activity_timeline
 layout custom_dialog
@@ -2171,6 +2174,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string tweet
+string what_s_happening
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

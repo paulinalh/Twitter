@@ -16,6 +16,10 @@
         "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/menu/login.xml"
     },
     {
+        "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/layout_activity_compose.xml.flat",
+        "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/layout/activity_compose.xml"
+    },
+    {
         "merged": "/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/res/merged/debug/layout_item_tweet.xml.flat",
         "source": "/Users/paulinalh/Desktop/Github/Twitter/app/src/main/res/layout/item_tweet.xml"
     },
