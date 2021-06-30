@@ -17,10 +17,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder>{
+public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
 
     Context context;
-    List <Tweet> tweets;
+    List<Tweet> tweets;
     //Pass in the context and list of tweets
 
     public TweetsAdapter(Context context, List<Tweet> tweets) {
@@ -34,7 +34,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     @Override
 
     public ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
-        View view=LayoutInflater.from(context).inflate(R.layout.item_tweet, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_tweet, parent, false);
         return new ViewHolder(view);
     }
 
@@ -43,7 +43,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
         //Get the data at position
-        Tweet tweet=tweets.get(position);
+        Tweet tweet = tweets.get(position);
 
         //Bind the tweet with viewholder
         holder.bind(tweet);
@@ -65,9 +65,9 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
-            ivProfileImage=itemView.findViewById(R.id.ivProfileImage);
-            tvBody= itemView.findViewById(R.id.tvBody);
-            tvScreenName=itemView.findViewById(R.id.tvScreenName);
+            ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
+            tvBody = itemView.findViewById(R.id.tvBody);
+            tvScreenName = itemView.findViewById(R.id.tvScreenName);
         }
 
         public void bind(Tweet tweet) {
