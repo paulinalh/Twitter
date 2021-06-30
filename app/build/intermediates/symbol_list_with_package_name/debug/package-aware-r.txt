@@ -1660,6 +1660,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnLogout
 id buttonPanel
 id cancel_button
 id center
