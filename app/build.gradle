@@ -6,6 +6,7 @@ apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
     compileSdkVersion 28
+    apply plugin: 'com.android.application'
 
     defaultConfig {
         applicationId "com.codepath.apps.restclienttemplate"
@@ -52,4 +53,6 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.1'
     implementation 'org.parceler:parceler-api:1.1.12'
     annotationProcessor 'org.parceler:parceler:1.1.12'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
 }
