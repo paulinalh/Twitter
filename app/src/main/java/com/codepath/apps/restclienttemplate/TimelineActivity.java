@@ -98,6 +98,7 @@ public class TimelineActivity extends AppCompatActivity {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 adapter.clear();
                 // ...the data has come back, add new items to your adapter...
+                //adapter.addAll(tweets);
                 try {
                     tweets.addAll(Tweet.fromJsonArray(jsonArray));
                 } catch (JSONException e) {

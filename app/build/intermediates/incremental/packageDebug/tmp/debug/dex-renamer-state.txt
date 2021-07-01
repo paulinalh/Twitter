@@ -1,4 +1,4 @@
-#Thu Jul 01 15:48:46 CDT 2021
+#Thu Jul 01 17:50:57 CDT 2021
 base.1=/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
 path.1=classes.dex
 base.0=/Users/paulinalh/Desktop/Github/Twitter/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
