@@ -29,7 +29,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Vertical Video](Gif/TwitterGif.gif)
+
+<img src='Gif/TwitterGif.gif' title='Vertical Video' width='500' alt='Vertical Gif' />
 
 GIF created with [Kap](https://getkap.co/).
 
