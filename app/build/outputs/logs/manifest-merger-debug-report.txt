@@ -9,11 +9,13 @@ MERGED from [com.google.android.material:material:1.2.1] /Users/paulinalh/.gradl
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/233cb7ebe03e1e8c78dc0db3bf77ecc6/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.codepath.libraries:asynchttpclient:0.0.9] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/ec8a2be8ac7b890dbd2f70ecdd8769f6/jetified-asynchttpclient-0.0.9/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/a16db5b44425ecffd4781fb791b0f708/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [jp.wasabeef:glide-transformations:4.1.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/b0a22a76f9ce99809edb82cb96119331/jetified-glide-transformations-4.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/fa52e002ae9e78e35c25fee9f61d47d2/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/94408f450c40aad162bc9708d96445f2/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/b8baad7e5d8c17b446fd43512a69256e/jetified-stetho-okhttp3-1.5.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.stetho:stetho:1.5.1] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/72fd29544aeb516a48db3dc5a622f04f/jetified-stetho-1.5.1/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/98533a75c963d389d2db7b5a19727bc5/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [jp.co.cyberagent.android:gpuimage:2.0.4] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/2846f8f6cc3abc87eb45442614a077f5/jetified-gpuimage-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/f5f514aefab3bab424b829f9c5a8fd3e/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/e27002105a9bdd38fe216ef919b747b9/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/201520ec0a185ec8f3b8dab96cf35d1d/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
@@ -160,6 +162,8 @@ MERGED from [com.codepath.libraries:asynchttpclient:0.0.9] /Users/paulinalh/.gra
 MERGED from [com.codepath.libraries:asynchttpclient:0.0.9] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/ec8a2be8ac7b890dbd2f70ecdd8769f6/jetified-asynchttpclient-0.0.9/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/a16db5b44425ecffd4781fb791b0f708/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/a16db5b44425ecffd4781fb791b0f708/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [jp.wasabeef:glide-transformations:4.1.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/b0a22a76f9ce99809edb82cb96119331/jetified-glide-transformations-4.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [jp.wasabeef:glide-transformations:4.1.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/b0a22a76f9ce99809edb82cb96119331/jetified-glide-transformations-4.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/fa52e002ae9e78e35c25fee9f61d47d2/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/fa52e002ae9e78e35c25fee9f61d47d2/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/94408f450c40aad162bc9708d96445f2/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
@@ -170,6 +174,8 @@ MERGED from [com.facebook.stetho:stetho:1.5.1] /Users/paulinalh/.gradle/caches/t
 MERGED from [com.facebook.stetho:stetho:1.5.1] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/72fd29544aeb516a48db3dc5a622f04f/jetified-stetho-1.5.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/98533a75c963d389d2db7b5a19727bc5/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/98533a75c963d389d2db7b5a19727bc5/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [jp.co.cyberagent.android:gpuimage:2.0.4] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/2846f8f6cc3abc87eb45442614a077f5/jetified-gpuimage-2.0.4/AndroidManifest.xml:7:5-9:41
+MERGED from [jp.co.cyberagent.android:gpuimage:2.0.4] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/2846f8f6cc3abc87eb45442614a077f5/jetified-gpuimage-2.0.4/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/f5f514aefab3bab424b829f9c5a8fd3e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/f5f514aefab3bab424b829f9c5a8fd3e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/paulinalh/.gradle/caches/transforms-2/files-2.1/e27002105a9bdd38fe216ef919b747b9/fragment-1.1.0/AndroidManifest.xml:20:5-22:41

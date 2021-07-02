@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +17,8 @@ import com.codepath.apps.restclienttemplate.models.Tweet;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
 
@@ -77,6 +78,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvBody;
         TextView tvScreenName;
         ImageView ivMedia;
+        TextView tvTime;
+        TextView tvName;
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
@@ -84,18 +87,24 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             ivMedia =itemView.findViewById(R.id.ivMedia);
+            tvName=itemView.findViewById(R.id.tvName);
+            tvTime=itemView.findViewById(R.id.tvTime);
+
         }
 
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvScreenName.setText(tweet.user.screenName);
-            Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
+            tvScreenName.setText("@"+ tweet.user.screenName);
+            tvName.setText(tweet.user.name);
+            tvTime.setText(tweet.createdAt);
+
+            Glide.with(context).load(tweet.user.profileImageUrl).transform(new RoundedCornersTransformation(200, 10)).into(ivProfileImage);
 
 
             Log.d("TAG",tweet.mediaUrl);
             if(tweet.mediaUrl!=null){
                 ivMedia.setVisibility(View.VISIBLE);
-                Glide.with(context).load(tweet.mediaUrl).into(ivMedia);
+                Glide.with(context).load(tweet.mediaUrl).transform(new RoundedCornersTransformation(40, 0)).into(ivMedia);
             }else{
                 ivMedia.setVisibility(View.GONE);
             }

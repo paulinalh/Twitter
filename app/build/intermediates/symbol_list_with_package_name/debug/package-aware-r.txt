@@ -405,6 +405,8 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
+attr gpuimage_show_loading
+attr gpuimage_surface_type
 attr haloColor
 attr haloRadius
 attr headerLayout
@@ -1541,6 +1543,19 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_vector_close
+drawable ic_vector_compose
+drawable ic_vector_compose_dm
+drawable ic_vector_heart
+drawable ic_vector_heart_stroke
+drawable ic_vector_home
+drawable ic_vector_home_stroke
+drawable ic_vector_notifications
+drawable ic_vector_notifications_stroke
+drawable ic_vector_retweet
+drawable ic_vector_retweet_stroke
+drawable ic_vector_search
+drawable ic_vector_search_stroke
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1659,6 +1674,7 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottom_menu
 id bounce
 id btnLogout
 id btnTweet
@@ -1749,6 +1765,10 @@ id home
 id homeAsUp
 id honorRequest
 id icon
+id icon1
+id icon2
+id icon3
+id icon4
 id icon_group
 id ifRoom
 id ignore
@@ -1758,8 +1778,10 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivLike
 id ivMedia
 id ivProfileImage
+id ivRetweet
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1894,6 +1916,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id surface_view
 id swipeContainer
 id tabMode
 id tag_accessibility_actions
@@ -1922,6 +1945,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id texture_view
 id tiCounter
 id time
 id title
@@ -1940,7 +1964,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvBody
+id tvName
 id tvScreenName
+id tvTime
 id unchecked
 id uniform
 id unlabeled
@@ -2085,6 +2111,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottom_navigation_menu
 menu login
 menu menu_main
 plurals mtrl_badge_content_description
@@ -2921,6 +2948,7 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable GPUImageView gpuimage_show_loading gpuimage_surface_type
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth

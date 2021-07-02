@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -40,6 +41,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
         getMenuInflater().inflate(R.menu.login, menu);
         return true;
     }
+
 
     // OAuth authenticated successfully, launch primary authenticated activity
     // i.e Display application "homepage"
