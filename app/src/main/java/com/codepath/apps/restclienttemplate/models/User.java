@@ -6,6 +6,7 @@ import org.parceler.Parcel;
 
 @Parcel
 public class User {
+    //User is an object of Tweet. This class extracts the details of User from Json
 
     public String name;
     public String screenName;
@@ -15,6 +16,8 @@ public class User {
     public User() {
     }
 
+    //In this method we assign the keys from the Json file for each field  to the String
+    // variables defined at the top of the page
     public static User fromJson(JSONObject jsonObject) throws JSONException {
         User user = new User();
         user.name = jsonObject.getString("name");

@@ -17,6 +17,7 @@ import com.codepath.apps.restclienttemplate.models.Tweet;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Locale;
 
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
@@ -71,7 +72,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     }
 
 
-    //define a viewholder
+    //This method defines all the views from the tweets, assigns the id from the .xml file and shows
+    // the text from the API extracted from the Json object
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView ivProfileImage;
@@ -86,30 +88,34 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
-            ivMedia =itemView.findViewById(R.id.ivMedia);
-            tvName=itemView.findViewById(R.id.tvName);
-            tvTime=itemView.findViewById(R.id.tvTime);
+            ivMedia = itemView.findViewById(R.id.ivMedia);
+            tvName = itemView.findViewById(R.id.tvName);
+            tvTime = itemView.findViewById(R.id.tvTime);
 
         }
 
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvScreenName.setText("@"+ tweet.user.screenName);
+            tvScreenName.setText("@" + tweet.user.screenName);
             tvName.setText(tweet.user.name);
-            tvTime.setText(tweet.createdAt);
-
-            Glide.with(context).load(tweet.user.profileImageUrl).transform(new RoundedCornersTransformation(200, 10)).into(ivProfileImage);
-
-
-            Log.d("TAG",tweet.mediaUrl);
-            if(tweet.mediaUrl!=null){
+            tvTime.setText(" · " + tweet.createdAt);
+            //uses Glide library to insert profile image
+            Glide.with(context)
+                    .load(tweet.user.profileImageUrl)
+                    .transform(new RoundedCornersTransformation(200, 10))
+                    .into(ivProfileImage);
+            //uses Glide library to insert image of tweet and conditional if to define the
+            // visibility of the image view. If the tweet doesnt have an image
+            // ,the visibilityof the view is gone
+            Log.d("TAG", tweet.mediaUrl);
+            if (tweet.mediaUrl != null) {
                 ivMedia.setVisibility(View.VISIBLE);
-                Glide.with(context).load(tweet.mediaUrl).transform(new RoundedCornersTransformation(40, 0)).into(ivMedia);
-            }else{
+                Glide.with(context).load(tweet.mediaUrl)
+                        .transform(new RoundedCornersTransformation(40, 0))
+                        .into(ivMedia);
+            } else {
                 ivMedia.setVisibility(View.GONE);
             }
-
-            //Glide.with(context).load(tweet.entities.media.mediaUrl).into(ivMedia);
 
         }
 

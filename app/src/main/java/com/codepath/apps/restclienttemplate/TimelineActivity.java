@@ -33,11 +33,10 @@ import java.util.List;
 import okhttp3.Headers;
 
 public class TimelineActivity extends AppCompatActivity {
-    private SwipeRefreshLayout swipeContainer;
 
+    private SwipeRefreshLayout swipeContainer;
     public static final String TAG = "TimelineActivity";
     private final int REQUEST_CODE = 20;
-
 
     TwitterClient client;
     RecyclerView rvTweets;
@@ -59,9 +58,9 @@ public class TimelineActivity extends AppCompatActivity {
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
         rvTweets.setAdapter(adapter);
         populateHomeTimeline();
-
+        //The logout button is part of the bottom menu of the app
         View btnLogout = findViewById(R.id.icon4);
-
+        //We declare an OnClick Listener to Logout and return to Login Page
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,16 +69,12 @@ public class TimelineActivity extends AppCompatActivity {
         });
 
 
-
         // Lookup the swipe container view
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                // Your code to refresh the list here.
-                // Make sure you call swipeContainer.setRefreshing(false)
-                // once the network request has completed successfully.
                 fetchTimelineAsync(0);
             }
         });
@@ -90,9 +85,10 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_red_light);
 
 
-
     }
 
+    //This method is used when refreshing the timeline. It clears, load all the tweets and
+    //notify the adapter how the activity changed
     public void fetchTimelineAsync(int page) {
         // Send the network request to fetch the updated data
         // `client` here is an instance of Android Async HTTP
@@ -104,7 +100,6 @@ public class TimelineActivity extends AppCompatActivity {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 adapter.clear();
                 // ...the data has come back, add new items to your adapter...
-                //adapter.addAll(tweets);
                 try {
                     tweets.addAll(Tweet.fromJsonArray(jsonArray));
                 } catch (JSONException e) {
@@ -122,21 +117,22 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
+    //This method lets the Compose Tweet option be visible in the action bar always, if the user is
+    // signed in
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        //getMenuInflater().inflate(R.menu.bottom_navigation_menu, menu);
         return true;
 
     }
 
 
-
+    //When the Compose icon is clicked on the top right Menu, Compose Activity now shows.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if(item.getItemId()==R.id.compose){
+        if (item.getItemId() == R.id.compose) {
             //compose icon has been selected
             //Toast.makeText(this, "Compose!", Toast.LENGTH_SHORT).show();
             //navigate to the compose activity
@@ -148,14 +144,15 @@ public class TimelineActivity extends AppCompatActivity {
 
     }
 
+    //When a new tweet is made it shows at the top of the screen without needing to scroll up
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
-        if(requestCode==REQUEST_CODE && resultCode==RESULT_OK){
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
             //Get data from the intent (tweet)
-            Tweet tweet=Parcels.unwrap(data.getParcelableExtra("tweet"));
+            Tweet tweet = Parcels.unwrap(data.getParcelableExtra("tweet"));
             //Update de RV with the tweet
             //Modify data source of tweets
-            tweets.add(0,tweet);
+            tweets.add(0, tweet);
             //Set the adapter
             adapter.notifyItemInserted(0);
             rvTweets.smoothScrollToPosition(0);
@@ -163,6 +160,7 @@ public class TimelineActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    //Ths method adds all the other existing tweets to the timline
     private void populateHomeTimeline() {
         client.getHomeTimeline(new JsonHttpResponseHandler() {
             @Override
@@ -188,9 +186,8 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
-
+    //This method Log out from the account and goes directly to Login page
     public void onLogoutButton() {
-
 
         // forget who's logged in
         RestApplication.getRestClient(this).clearAccessToken();
@@ -203,6 +200,5 @@ public class TimelineActivity extends AppCompatActivity {
 
         finish();
     }
-
 
 }

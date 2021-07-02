@@ -44,7 +44,6 @@ public class TwitterClient extends OAuthBaseClient {
     }
 
 
-
     // CHANGE THIS
     // DEFINE METHODS for different API endpoints here
     public void getHomeTimeline(JsonHttpResponseHandler handler) {
